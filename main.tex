@@ -611,16 +611,16 @@ underlying sensitivity matrix at different levels of granularity.
 \midrule
 Mastery-Seeker   & 1.0 & 0.6 & 0.3 & 0.0 & 0.0 & 0.0 \\
 Solver           & 0.6 & 1.0 & 0.6 & 0.0 & 0.0 & 0.0 \\
-Architect        & 0.3 & 0.6 & 1.0 & 0.0 & 0.0 & 0.3 \\
-Builder          & 0.6 & 0.6 & 0.3 & 0.0 & 0.3 & 0.0 \\
-Creator          & 0.3 & 0.0 & 0.0 & 1.0 & 0.6 & 0.3 \\
-Synthesizer      & 0.3 & 0.6 & 1.0 & 0.6 & 0.3 & 0.0 \\
-Helper           & 0.3 & 0.3 & 0.0 & 0.0 & 1.0 & 0.6 \\
-Stabilizer       & 0.0 & 1.0 & 0.6 & 0.0 & 0.3 & 0.0 \\
+Architect        & 0.3 & 0.6 & 1.0 & 0.0 & 0.3 & 0.3 \\
+Builder          & 0.6 & 0.6 & 0.3 & 1.0 & 0.0 & 0.0 \\
+Creator          & 0.3 & 0.0 & 0.0 & 1.0 & 0.0 & 0.6 \\
+Synthesizer      & 0.3 & 0.6 & 1.0 & 0.6 & 0.6 & 0.0 \\
+Helper           & 0.3 & 0.6 & 0.0 & 0.0 & 1.0 & 0.3 \\
+Stabilizer       & 0.0 & 1.0 & 0.6 & 0.0 & 0.6 & 0.0 \\
 Explorer         & 0.6 & 0.0 & 0.0 & 0.6 & 0.3 & 1.0 \\
-Strategist       & 0.6 & 0.6 & 0.3 & 0.3 & 1.0 & 0.0 \\
-Harmonizer       & 0.3 & 0.3 & 0.6 & 0.0 & 1.0 & 0.3 \\
-Autonomist       & 0.0 & 0.0 & 0.0 & 0.3 & 0.3 & 1.0 \\
+Strategist       & 0.6 & 0.3 & 0.6 & 0.0 & 1.0 & 0.3 \\
+Harmonizer       & 0.3 & 0.6 & 0.6 & 0.0 & 1.0 & 0.3 \\
+Autonomist       & 0.0 & 0.3 & 0.0 & 0.3 & 0.3 & 1.0 \\
 \bottomrule
 \end{tabular}}
 \label{tab:sensitivity}
@@ -665,7 +665,7 @@ Solvers experience joy through Resolution: turning ambiguity into clarity and
 closing gaps in understanding. They find satisfaction in debugging, refactoring,
 and untangling complex problems. Flow for Solvers emerges when they can iteratively
 test hypotheses and converge on elegant solutions. Coherence and Growth 
-reinforce this engagement, but Creation is secondary unless it supports problem 
+reinforce this engagement, but Creation plays a limited role unless it supports problem 
 closure. They flourish in settings where problems are well-scoped and rapid 
 feedback loops are available.
 
@@ -679,27 +679,32 @@ matters when the architecture impacts team alignment. They excel in roles that
 involve system design, modeling, or reasoning about large-scale structure.
 
 \subsection{Builder}
-Builders experience joy through Creation grounded in concreteness. They find
-satisfaction in making things work, for instance, implementing features, wiring components,
-and seeing tangible progress. Flow arises from steady forward movement, where
-tools remain predictable, and interruptions are minimal. Growth and Resolution 
-support engagement, but conceptual elegance is secondary to functionality. 
-Builders thrive in environments that allow for incremental construction, stable 
-toolchains, and visible results.
+Builders experience joy through Creation grounded in concreteness and tangible 
+progress. Unlike Creators, whose engagement is driven by open-ended 
+exploration, Builders find satisfaction in making things work: implementing 
+features, wiring components, and producing visible, functional results. Flow 
+arises from steady forward movement, where tools remain predictable and 
+interruptions are minimal. Growth and Resolution support engagement by 
+enabling incremental improvement and problem-solving along the way, but 
+conceptual elegance is secondary to functionality. Builders thrive in 
+environments that allow for incremental construction, stable toolchains, and 
+visible results.
 
 \subsection{Creator}
 Creators derive joy from open-ended Creation and expressive freedom. They excel
-in generating new ideas, experimenting with alternatives and imagining 
+in generating new ideas, experimenting with alternatives, and imagining 
 possibilities. Flow arises from exploration unconstrained by rigid structure.
-Autonomy amplifies their engagement, while Coherence matters only insofar
+Autonomy strongly amplifies their engagement, providing the self-directed 
+space that creative work demands. Coherence matters only insofar
 as it supports imaginative expression. Creators flourish in settings that allow
 for ideation, prototyping, and conceptual play.
 
 \subsection{Synthesizer}
-Synthesizers are grateful to integrate diverse ideas into a coherent 
+Synthesizers are driven to integrate diverse ideas into a coherent 
 whole. Their engagement peaks when connecting perspectives, aligning 
 constraints, or reconciling conceptual tensions. Coherence and Contribution 
-reinforce their motivation, while Resolution supports refinement of 
+reinforce their motivation, as the integrative work often serves both 
+conceptual clarity and collaborative value. Resolution supports refinement of 
 emerging structures. They thrive in interdisciplinary work and collaborative 
 design tasks where integration is central.
 
@@ -707,36 +712,63 @@ design tasks where integration is central.
 Helpers derive joy from Contribution: enabling others to succeed. They find
 satisfaction in mentoring, improving practices, or removing obstacles for the
 team. Flow arises when assisting others aligns with their technical engagement.
-Resolution supports problem-solving for others, but personal novelty or autonomy 
-is secondary. Helpers excel in collaborative environments, code review, 
+Resolution supports problem-solving for others and is a significant part of the 
+Helper's engagement, while personal novelty and autonomy play a lesser role. 
+Helpers excel in collaborative environments, code review, 
 documentation, and knowledge-sharing roles.
 
 \subsection{Stabilizer}
-Stabilizers experience joy through reliability, predictability, and long-term
-maintenance of functioning systems. Their primary dimension is Contribution 
-oriented toward system stability rather than interpersonal support. Flow 
-comes from ensuring consistency, monitoring behavior, or preventing 
-regressions. Resolution reinforces their work; novelty is valued only when it 
-reduces future uncertainty. Stabilizers thrive in operational, QA, or 
+Stabilizers experience joy primarily through Resolution: ensuring reliability, 
+monitoring system behavior, and preventing regressions. Their engagement is 
+directed toward Contribution to system stability rather than interpersonal 
+support, but the experiential source of joy lies in the resolution process 
+itself. Coherence reinforces their work by providing the structural clarity 
+that makes maintenance meaningful. Novelty is valued only when it reduces 
+future uncertainty. Stabilizers thrive in operational, QA, or 
 maintenance-oriented contexts.
 
 \subsection{Explorer}
 Explorers derive joy from novelty, experimentation, and boundary-pushing.
-Autonomy and Creation dominate their profile, with Growth emerging through 
-self-directed discovery. Flow arises when constraints are minimal and 
-uncertainty is an invitation rather than an obstacle. Coherence matters only 
-after the exploration produces insight. Explorers thrive in research, prototyping,
-and experimental tool work.
+Autonomy dominates their profile, with Creation as a strong secondary driver 
+and Growth emerging through self-directed discovery. Flow arises when 
+constraints are minimal and uncertainty is an invitation rather than an 
+obstacle. Coherence matters only after the exploration produces insight. 
+Explorers thrive in research, prototyping, and experimental tool work.
 
 \subsection{Strategist}
-Strategists experience joy from long-range coherence: anticipating consequences,
-weighing trade-offs, and shaping trajectories. They integrate Coherence, 
-Autonomy, and Contribution, derived satisfaction from influencing the direction of the system
-. Flow emerges in complex planning tasks or architectural evolution.
-Resolution supports decision-making, but novelty matters only in the service of 
-strategic clarity. Strategists thrive in leadership, architecture evolution, 
-and high-level design.
-\begin{figure}[H]
+Strategists experience joy from shaping the direction of systems and 
+organizations. Their primary sensitivity is Contribution: the satisfaction of 
+influencing trajectories, aligning decisions, and enabling long-term impact. 
+This is supported by Coherence, which structures their long-range reasoning, 
+and Growth, which reflects the continuous learning involved in anticipating 
+consequences and expanding strategic judgment. Resolution plays a supporting 
+role in trade-off analysis. Autonomy matters insofar as strategic judgment 
+requires independent evaluation. Flow emerges in complex planning tasks, 
+architectural evolution, or organizational strategy. Strategists thrive in 
+leadership, architecture evolution, and high-level design.
+
+\subsection{Harmonizer}
+Harmonizers derive joy from balancing technical, interpersonal, or
+organizational tensions. Contribution is their primary driver, supported by 
+Coherence and Resolution as strong secondary dimensions: Coherence provides the 
+structural lens through which alignment is pursued, while Resolution supports the 
+convergence needed to reconcile competing demands. They find satisfaction when 
+systems, teams, and practices align. Flow emerges in mediating competing 
+constraints or integrating stakeholder needs. Harmonizers excel in roles 
+requiring facilitation, coordination, and socio-technical negotiation.
+
+\subsection{Autonomist}
+Autonomists experience joy primarily through Autonomy: self-direction, control 
+over workflow, and freedom from unnecessary constraints. Flow emerges in 
+independent tasks with clear objectives and minimal external interference.
+Creation, Resolution, and Contribution support their engagement when 
+self-determined, but none of these dimensions drives the Autonomist 
+independently. Autonomists thrive in environments that provide flexibility, 
+trust, and space for individualized workflows.
+
+\section{Modeling the Dynamics of Joy}\label{sec:dynamics}
+
+\begin{figure}[t]
     \centering
     \includegraphics[width=.95\linewidth]{images/dynamics.png}
   \caption{Conceptual model of the dynamics of joy in software creation. 
@@ -745,23 +777,6 @@ and high-level design.
   stability and quality of this interaction.}
   \label{fig:dynamics-of-joy}
 \end{figure}
-\subsection{Harmonizer}
-Harmonizers derive joy from balancing technical, interpersonal, or
-organizational tensions. They are sensitive to Contribution, Coherence, and Resolution
-simultaneously and find satisfaction when systems, teams, and practices align.
-Flow emerges in mediating competing constraints or integrating stakeholder 
-needs. Harmonizers excel in roles requiring facilitation, coordination, 
-and socio-technical negotiation.
-
-\subsection{Autonomist}
-Autonomists experience joy primarily through Autonomy: self-direction, control 
-over workflow, and freedom from unnecessary constraints. Flow emerges in 
-independent tasks with clear objectives and minimal external interference.
-Creation and Resolution support their engagement when self-determined. 
-Autonomists thrive in environments that provide flexibility, trust, and space 
-for individualized workflows.
-
-\section{Modeling the Dynamics of Joy}\label{sec:dynamics}
 
 This section integrates the elements introduced earlier into a unified account 
 of how joy arises and fluctuates during software creation. Rather than treating 
